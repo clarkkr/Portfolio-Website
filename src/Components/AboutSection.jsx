@@ -1,3 +1,4 @@
+import { Briefcase, Code, User } from "lucide-react";
 export const AboutSection = () => {
   return (
     <section id="about" className="py-24 px-4 relative">
@@ -9,12 +10,85 @@ export const AboutSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 ">
-            <h3>Passionate Web Developer & Data Scientist</h3>
+            <h3 className="text-2xl font-semibold">
+              Passionate Web Developer & Data Scientist
+            </h3>
 
-            <p></p>
+            <p className="text-muted-foreground">
+              With over 4 years of educational experience in software
+              development, I hope to create responsive, accessible, and engaging
+              software using modern technologies.
+            </p>
+
+            <p className="text-muted-foreground">
+              I am passionate about creating streamlined solutions to modern
+              problems, I am constantly going out of my way to learn new
+              technologies and to keep my self updated on the constantly
+              changing development process.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center ">
+              <a href="#contact" className="cosmic-button">
+                {" "}
+                Get In Touch
+              </a>
+
+              <a
+                href="#contact"
+                className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
+              >
+                {" "}
+                Download Resume
+              </a>
+            </div>
           </div>
 
-          <div></div>
+          <div className="grid grid-cols-1 gap-6">
+            <div className="gradient-border p-6 card-hover">
+              <div className="flex items-start gap-4">
+                <div className="p-3 rounded-full bg-primary/10">
+                  <Code className="h-6 w-6 text-primary" />
+                </div>
+                <div className="text-left">
+                  <h4 className="font-semibold text-lg"> Web Development</h4>
+                  <p className="text-muted-foreground">
+                    Creative responsive & beautiful web applications with modern
+                    frameworks.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="gradient-border p-6 card-hover">
+              <div className="flex items-start gap-4">
+                <div className="p-3 rounded-full bg-primary/10">
+                  <User className="h-6 w-6 text-primary" />
+                </div>
+                <div className="text-left">
+                  <h4 className="font-semibold text-lg">Backend Development</h4>
+                  <p className="text-muted-foreground">
+                    Multiple years of experience with Java, C++, and Python
+                    allowed me to create efficient working programs.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="gradient-border p-6 card-hover">
+              <div className="flex items-start gap-4">
+                <div className="p-3 rounded-full bg-primary/10">
+                  <Briefcase className="h-6 w-6 text-primary" />
+                </div>
+                <div className="text-left">
+                  <h4 className="font-semibold text-lg">Project Management</h4>
+                  <p className="text-muted-foreground">
+                    Leading projects from beginning to end using agile
+                    development processes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
