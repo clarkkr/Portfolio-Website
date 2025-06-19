@@ -7,7 +7,7 @@ export const ContactSection = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const handleSubmit = (e) => {
-    e.preventDefault;
+    e.preventDefault();
 
     setIsSubmitting(true);
     setTimeout(() => {
