@@ -28,11 +28,12 @@ export const AboutSection = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center ">
+              {/* Button to scroll down to contact page */}
               <a href="#contact" className="cosmic-button">
                 {" "}
                 Get In Touch
               </a>
-
+              {/*Button to view resume in another tab*/}
               <a
                 href="/Kory_Resume.pdf"
                 target="_blank"
@@ -41,6 +42,7 @@ export const AboutSection = () => {
               >
                 View Resume
               </a>
+              {/*Button to download resume*/}
               <a
                 href="/Kory_Resume.pdf"
                 download

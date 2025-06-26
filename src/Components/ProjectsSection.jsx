@@ -9,7 +9,7 @@ const projects = [
     image: "/projects/GoRules.png",
     tags: ["Python, HTML/CSS, SQL, GoRules"],
     githubUrl:
-      "#https://github.com/clarkkr/Portfolio/tree/main/Senior%20Design%20Project",
+      "https://github.com/clarkkr/Portfolio/tree/main/Senior%20Design%20Project",
   },
   {
     id: 2,
@@ -19,7 +19,18 @@ const projects = [
     image: "/projects/CECLNX01Processes.png",
     tags: ["Ajax, HTML/CSS"],
     githubUrl:
-      "#https://github.com/clarkkr/Portfolio/blob/main/Web%20Design/jQueryAndAjax.html",
+      "https://github.com/clarkkr/Portfolio/blob/main/Web%20Design/jQueryAndAjax.html",
+  },
+
+  {
+    id: 3,
+    title: "Current Weather App",
+    description:
+      "A program to display the current weather of an area given a set of latitude and longitude coordinates. Also provides a zoomed in, interactable map for reference.",
+    image: "/projects/WeatherApp.png",
+    tags: ["React, Leaflet, HTML/CSS, Javascript, API Calls"],
+    githubUrl: "https://github.com/clarkkr/Weather-App",
+    demoUrl: "https://weather-app-nine-ashy-86.vercel.app",
   },
 ];
 export const ProjectsSection = () => {
@@ -74,6 +85,13 @@ export const ProjectsSection = () => {
                       className="text-foreground/80 hover:text-primary transition-colors duration-300"
                     >
                       <Github size={20} />
+                    </a>
+                    <a
+                      href={project.demoUrl}
+                      target="_blank"
+                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                    >
+                      <ExternalLink size={20} />
                     </a>
                   </div>
                 </div>
