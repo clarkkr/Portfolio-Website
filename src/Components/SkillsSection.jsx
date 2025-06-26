@@ -9,8 +9,8 @@ const skills = [
   //Frontend
   { name: "HTML/CSS", level: 90, category: "frontend" },
   { name: "Javascript", level: 85, category: "frontend" },
-  { name: "React", level: 70, category: "frontend" },
-  { name: "Tailwind CSS", level: 70, category: "frontend" },
+  { name: "React", level: 80, category: "frontend" },
+  { name: "Tailwind CSS", level: 80, category: "frontend" },
   { name: "Typescript", level: 60, category: "frontend" },
   { name: "Bootstrap", level: 80, category: "frontend" },
   //Backend
@@ -25,6 +25,8 @@ const skills = [
   //Tools
   { name: "GitHub/Git", level: 95, category: "tools" },
   { name: "VS Code", level: 95, category: "tools" },
+  { name: "OpenWeather API", level: 90, category: "tools" },
+  { name: "React Leaflet", level: 85, category: "tools" },
 ];
 
 {
