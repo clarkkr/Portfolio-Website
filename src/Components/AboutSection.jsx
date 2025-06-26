@@ -34,7 +34,16 @@ export const AboutSection = () => {
               </a>
 
               <a
-                href="#contact"
+                href="/Kory_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
+              >
+                View Resume
+              </a>
+              <a
+                href="/Kory_Resume.pdf"
+                download
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
                 {" "}
